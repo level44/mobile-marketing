@@ -1,0 +1,742 @@
+@import "fonts.css";
+
+:root {
+	--water-blue: #0fa6de;
+	--white: #ffffff;
+	--dull-yellow: #ede853;
+	--sickly-yellow: #ded947;
+	--ocean-blue: #0580ae;
+	--bright-yellow: #ffff00;
+	--water-blue-two: #0e94c0;
+	--pinkish-grey: #bbbbbb;
+	--warm-grey: #929292;
+	--white-two: #dcdcdc;
+	--black: #383838;
+	--black-two: #393939;
+	--ocean-blue-two: #04769c;
+	--very-light-pink: #fffefe;
+	--black-three: #000000;
+	--pinkish-grey-two: #cacaca;
+	--vermillion: #e51111;
+	--dark-sky-blue: #44bfed;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: #383838;
+	font-family: "Proxima-Nova-Condensed-Regular";
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 4.375em;
+}
+
+h2 {
+	font-size: 3.125em;
+	line-height: 0.84;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 1.875em;
+}
+
+h4 {
+	font-size: 1.625em;
+}
+
+.text-ocean {
+	color: #04769c;
+}
+
+.text-primary {
+	color: #0e94c0;
+}
+
+.text-default {
+	color: #ffffff;
+}
+
+.media {
+	min-height: 160px;
+}
+
+.media-body h4 {
+	line-height: 0.96;
+	margin-bottom: 10px;
+}
+
+.media-body p {
+	font-size: 1em;
+	line-height: 1.13;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.btn-lg {
+	border: 3px solid;
+	height: 67px;
+	font-size: 1.875em;
+	padding-left: 57px;
+	padding-right: 57px;
+	margin-top: 20px;
+}
+
+.btn-warning {
+	border-color: #ffff00;
+	background-color: #ffff00;
+	color: #000000;
+}
+
+.btn.btn-warning:hover,
+.btn.btn-warning:active,
+.btn.btn-warning:focus {
+	border-color: #0fa6de;
+	background-color: #ffff00;
+	color: #0e94c0;
+}
+
+.cl-header-logo {
+	background-color: #0e94c0;
+	height: 34px;
+	line-height: 34px;
+	width: 100%;
+	text-align: center;
+}
+
+.cl-header-logo svg {
+	display: inline-block;
+	margin-top: 4px;
+}
+
+.cl-header-nav-container {
+	background-color: #0e94c0;
+	color: #ffffff;
+	font-size: 1.125em;
+	line-height: 30px;
+}
+
+.cl-bars {
+	position: relative;
+	width: 22px;
+	height: 18px;
+	border-top: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
+	display: inline-block;
+}
+
+.cl-bars:before {
+	content: "";
+	height: 4px;
+	width: 100%;
+	position: absolute;
+	top: 3px;
+	display: block;
+	background-color: #ffffff;
+}
+
+.cl-bars:hover {
+	border-color: #d4d618;
+}
+
+.cl-bars:hover:before {
+	background-color: #d4d618;
+}
+
+.cl-menu-button {display: none; cursor: pointer; transition: ease 300ms; height: 18px; line-height: 36px;}
+.cl-menu-button:hover {color: #f5d804;}
+
+.cl-menu-container {width: 100%; position: relative;}
+.cl-menu-container .cl-checked-menu {display: none;}
+.cl-menu-container label {
+	font-weight: normal;
+	display: block;
+	margin-bottom: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-left: 7px;
+	background-color: #0e94c0;
+	height: 30px;
+	width: 36px;
+	cursor: pointer;
+}
+.cl-menu-container .cl-checked-menu:checked + label {color: #f5d804;}
+
+.cl-navigation {
+	list-style: none;
+	margin: 0 0 0 -10px;
+	padding: 0;
+}
+
+.cl-navigation li {
+	display: inline-block;
+}
+
+.cl-navigation > li.active {
+	background-color: #3da9cd;
+}
+
+.cl-navigation li a {
+	color: #ffffff;
+	padding-left: 9px;
+	padding-right: 9px;
+	text-transform: uppercase;
+}
+
+.cl-navigation li a:focus {
+	text-decoration: none;
+}
+
+.cl-description-text {
+	font-size: 1.625em;
+	line-height: 0.96;
+}
+
+.cl-list-steps {
+	counter-reset: section;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.cl-list-steps li {
+	text-align: center;
+}
+
+.cl-list-steps li:before {
+	display: block;
+	counter-increment: section;
+	content: counters(section, "");
+	font-size: 6.250em;
+	font-family: 'Proxima-Nova-Condensed-Regular';
+	color: #0e94c0;
+}
+
+hr {
+	border-top: 2px solid transparent;
+}
+
+.hr-primary {
+	border-top: 2px solid #0fa6de;
+}
+
+/*mobilnyy-marketing*/
+
+#mobilnyy-marketing {
+	background: url(../images/mobilnyy-marketing-bg.jpg) no-repeat center center;
+	min-height: 765px;
+	width: 100%;
+	overflow: hidden;
+}
+
+#mobilnyy-marketing .media-left {
+	text-align: center;
+}
+
+#mobilnyy-marketing .cl-text-center {
+	text-align: center;
+}
+
+.cl-mobilnyy-marketing__content {
+	background-color: rgba(255, 255, 255, 0.6);
+	min-height: 765px;
+	padding-bottom: 40px;
+}
+
+/*mobilnyy-marketing*/
+
+/*kommunikatsiya-s-kliyentami*/
+
+#kommunikatsiya-s-kliyentami {
+	background-color: #0fa6de;
+}
+
+.cl-kommunikatsiya-s-kliyentami__title {
+	padding: 60px 0 65px 0;
+}
+
+.cl-kommunikatsiya-s-kliyentami__content {
+	background-color: #44bfed;
+}
+
+.cl-kommunikatsiya-s-kliyentami__content h3 {
+	font-family: 'Proxima-Nova-Condensed-Bold';
+	font-size: 1.625em;
+	line-height: 0.96;
+	color: #ffffff;
+}
+
+.cl-kommunikatsiya-s-kliyentami__content p {
+	font-size: 1.125em;
+	line-height: 1.2;
+	color: #393939;
+}
+
+.cl-kommunikatsiya-s-kliyentami__content .col-md-6,
+.cl-kommunikatsiya-s-kliyentami__content .col-lg-4 {
+	margin: 0;
+	padding: 0;
+}
+
+.cl-bottom-content {
+	position: absolute;
+	top: 61%;
+	padding: 0 20px;
+}
+
+.cl-content-01,
+.cl-content-02,
+.cl-content-03 {
+	position: relative;
+	width: 100%;
+	height: 513px;
+	opacity: 0.8;
+	background-color: #0fa6de;
+}
+
+.cl-content-01 {
+	background: url(../images/content-01.jpg) no-repeat center top;
+}
+
+.cl-content-02 {
+	background: url(../images/content-02.jpg) no-repeat center top;
+}
+
+.cl-content-03 {
+	background: url(../images/content-03.jpg) no-repeat center top;
+}
+
+.cl-content-01:before,
+.cl-content-02:before,
+.cl-content-03:before {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+	 opacity: 0.8;
+}
+
+.cl-content-01:before {
+	background-color: #0fa6de;
+}
+
+.cl-content-02:before {
+	background-color: #0580ae;
+}
+
+.cl-content-03:before {
+	background-color: #0fa6de;
+}
+
+.cl-content-01:after,
+.cl-content-02:after,
+.cl-content-03:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 286px;
+	height: 286px;
+	top: 40px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 50%;
+}
+
+.cl-content-01:after {
+	background: url(../images/content-01.jpg) no-repeat center -40px;
+}
+
+.cl-content-02:after {
+	background: url(../images/content-02.jpg) no-repeat center -40px;
+}
+
+.cl-content-03:after {
+	background: url(../images/content-03.jpg) no-repeat center -40px;
+}
+
+.cl-col-md-4-5 {
+	float: left;
+	width: 37.5%;
+}
+
+.cl-kommunikatsiya-s-kliyentami__footer {
+	padding: 25px 0 35px 0;
+}
+
+/*kommunikatsiya-s-kliyentami*/
+
+/*podderzhka-proyekta*/
+
+#podderzhka-proyekta {
+	padding: 30px 0 50px 0;
+}
+
+/*podderzhka-proyekta*/
+
+/*dlya-kogo*/
+
+#dlya-kogo {
+	padding: 50px 0 55px 0;
+	background: url(../images/dlya-kogo-bg.jpg) no-repeat top center;
+	background-size: cover;
+	min-height: 626px;
+	background-color: #0fa6de;
+}
+
+#dlya-kogo ul {
+	font-size: 1.875em;
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+/*dlya-kogo*/
+
+/*kak-eto-rabotayet*/
+
+#kak-eto-rabotayet {
+	padding: 45px 0 0 0;
+	overflow: hidden;
+}
+
+#kak-eto-rabotayet .col-sm-6 {
+	text-align: center;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+#kak-eto-rabotayet .col-sm-6 .img-responsive {
+	margin: auto;
+}
+
+/*kak-eto-rabotayet*/
+
+/*raschet-stoimosti*/
+
+#raschet-stoimosti {
+	padding: 50px 0 65px 0;
+}
+
+#raschet-stoimosti textarea {
+	margin-bottom: 15px;
+}
+
+/*raschet-stoimosti*/
+
+/*kliyenty*/
+
+#kliyenty {
+	padding: 45px 0 135px 0;
+}
+
+/*kliyenty*/
+
+.cl-bg-container-fixed {
+	background: no-repeat top center fixed;
+}
+
+/*Footer*/
+
+.cl-footer-container {
+	border-top: 4px solid #0e94c0;
+	background: #0fa6de;
+	height: 240px;
+}
+
+.cl-footer-logo-container {
+	width: 235px;
+	height: 206px;
+	position: relative;
+	display: inline-block;
+}
+
+.cl-footer-logo {
+	background: url(../images/cl-footer-logo.png) no-repeat 0 0;
+	width: 127px;
+	height: 75px;
+	display: inline-block;
+	margin: auto;
+	right: 0;
+	left: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.cl-copyright-container {
+	color: #ffffff;
+	font-size: 0.750em;
+	line-height: 40px;
+	height: 40px;
+	background-color: #0e94c0;
+}
+
+/*Footer*/
+
+menu {
+	margin: 0;
+}
+
+.cl-toggle-menu.position-fixed {
+	position: fixed;
+	width: 100%;
+	/*background-color: #ffffff;*/
+	top: 0;
+	left: 0;
+	z-index: 101;
+	-webkit-animation: showMenu 0.3s linear reverse infinite;
+	animation: showMenu 0.3s linear reverse infinite;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+.img-responsive {
+	display: inline;
+}
+
+@media (max-width: 768px) {
+	.img-responsive {
+		text-align: center;
+		display: inline-block;
+	}
+
+	h1 {
+		font-size: 3.750em;
+	}
+
+	.btn-lg {
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.cl-content-01,
+	.cl-content-02,
+	.cl-content-03 {
+		min-height: 513px;
+		height: auto;
+	}
+
+	.cl-content-01 {
+		height: 590px;
+	}
+
+	.cl-content-02 {
+		height: 540px;
+	}
+
+	.cl-kommunikatsiya-s-kliyentami__content .col-lg-4:nth-child(1) .cl-bottom-content {
+		top: 55%;
+	}
+
+	.cl-kommunikatsiya-s-kliyentami__content .col-lg-4:nth-child(2) .cl-bottom-content {
+		top: 58%;
+	}
+
+	#mobilnyy-marketing {
+		background-size: cover;
+	}
+
+	.cl-menu-container {
+		margin-right: 0;
+		margin-left: 0;
+		position: static;
+	}
+
+	.cl-navigation li .cl-sub-menu {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.cl-menu-open {
+		margin-bottom: 0;
+	}
+
+	.cl-navigation {
+		position: absolute;
+		background-color: #0e94c0;
+		width: 100%;
+		right: 0;
+		top: 32px;
+		visibility: hidden;
+		max-height: 1000px;
+		padding-left: 0;
+		height: auto;
+		opacity: 0;
+		z-index: 100;
+	}
+
+	.cl-navigation li {
+		display: block;
+		line-height: 40px;
+		font-size: 25px;
+		border-top: 1px solid #0fa6de;
+	}
+
+	.cl-navigation li a {
+		color: #ffffff;
+		padding-left: 20px;
+		display: block;
+	}
+
+	.cl-navigation li .cl-sub-menu ul li a {
+		color: #ffffff;
+		padding-left: 40px;
+	}
+
+	.cl-navigation li a:hover,
+	.cl-navigation li .cl-sub-menu ul li a:hover{
+		color: #ffffff;
+	}
+
+	.cl-navigation li .cl-sub-menu {
+		background-color: #4fa925;
+		left: auto;
+		right: auto;
+		position: static;
+		height: auto;
+	}
+
+
+	.cl-navigation li .cl-sub-menu ul {
+		display: block;
+		text-align: left;
+		padding: 0;
+	}
+
+	.media-object {
+		width: 100%;
+	}
+
+	.media-left {
+		margin-bottom: 15px;
+	}
+
+	.media-left, .media-right, .media-body {
+		display: block;
+		width: 100%;
+	}
+
+	.cl-menu-button {display: block;}
+	.cl-menu-container {float: right !important;}
+	.cl-menu-container .cl-checked-menu:checked + label ~ .cl-navigation {visibility: visible; opacity: 1;}
+
+	.cl-xs-menu-main .cl-navigation {
+		top: 30px;
+	}
+
+	.cl-mobile-hide {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	#kak-eto-rabotayet .col-sm-6 {
+		text-align: left;
+		height: 442px;
+	}
+
+	#kak-eto-rabotayet .col-md-6:nth-child(3) img {
+		margin-left: -20px;
+	}
+
+	#kak-eto-rabotayet .col-md-6:nth-child(4) img {
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 992px) {
+	#mobilnyy-marketing .cl-text-center {
+		text-align: left;
+	}
+
+	#mobilnyy-marketing h1 {
+		margin-left: 120px;
+		white-space: nowrap;
+		font-size: 3.750em;
+	}
+
+	#mobilnyy-marketing .btn {
+		margin-left: 120px;
+	}
+
+	#kak-eto-rabotayet .col-sm-6 {
+		height: 366px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(2) img {
+		/*margin-left: -17px;*/
+		margin-top: 25px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(3) img {
+		margin-top: 15px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(4) img {
+		margin-top: 22px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(5) img {
+		margin-left: 10px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(6) img {
+		margin-top: -35px;
+	}
+}
+
+@media (min-width: 1282px) {
+	header {
+		height: 64px;
+	}
+
+	#mobilnyy-marketing h1 {
+		margin-left: 190px;
+		white-space: nowrap;
+	}
+
+	#mobilnyy-marketing .media-left {
+		min-width: 190px;
+	}
+
+	#mobilnyy-marketing .btn {
+		margin-left: 190px;
+	}
+
+	#kak-eto-rabotayet .col-sm-6 {
+		height: 442px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(2) img {
+		margin-left: -8px;
+		margin-top: 25px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(3) img {
+		margin-top: 15px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(4) img {
+		margin-top: 22px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(5) img {
+		margin-left: 19px;
+	}
+
+	#kak-eto-rabotayet .col-md-4:nth-child(6) img {
+		margin-top: -35px;
+	}
+}
